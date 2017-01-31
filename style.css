@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background-color: #f9f9f9; }
+
+body {
+  background-size: cover;
+  background-position: center; }
+
+.scroller {
+  height: 100%;
+  padding: 10px 10px 60px 10px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.ls .avatar {
+  background: #ffe607; }
+
+.ls .me .avatar {
+  background: #ff5722; }
+
+.yz .avatar {
+  background: #ff5722; }
+
+.yz .me .avatar {
+  background: #ffe607; }
+
+.dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10px; }
+  .dialog.me {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    .dialog.me .sentence {
+      background-color: #47bff5;
+      color: #fff;
+      border: 1px solid #47bff5; }
+
+.avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px; }
+
+.sentence {
+  margin: 2px 10px 0 10px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  word-break: break-all;
+  max-width: 70%; }
+
+body {
+  font-family: Helvetica Neue,Tahoma,Arial,PingFangSC-Regular,Hiragino Sans GB,Microsoft Yahei,sans-serif; }
+
+.inputer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  border-top: 1px solid #efefef;
+  background-color: #fefefe; }
+  .inputer input {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 5px;
+    font-size: 15px; }
+  .inputer button {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #03a9f4; }
