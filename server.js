@@ -42,9 +42,13 @@ io.on('connection', function (socket) {
 
     fs.writeFile(DB, JSON.stringify(db));
 
-    var to = CLIENTS[TO[from]].emit('message', {
-      content: data,
-      from: from
-    });
+    var to = CLIENTS[TO[from]];
+
+    if (to) {
+      to.emit('message', {
+        content: data,
+        from: from
+      });
+    }
   })
 });
